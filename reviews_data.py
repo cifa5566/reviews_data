@@ -25,3 +25,10 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print('There are',len(new),'data shorter than 100')
+
+
+# list comprehension
+
+good = [d for d in data if 'good' in data]
+
+print(good)
