@@ -18,3 +18,10 @@ for dat in data:
 	sum_len = length + sum_len #也可以直接寫成 sum_len += len(dat)
 
 print('average length =', sum_len / count, 'data')
+
+new = []
+
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('There are',len(new),'data shorter than 100')
